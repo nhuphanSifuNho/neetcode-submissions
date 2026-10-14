@@ -1,0 +1,6 @@
+class Solution:
+    def replaceElements(self, arr: List[int]) -> List[int]:
+        result = []
+        for i in range(1, len(arr) - 1):
+            result.append(max(0, *arr[i:]))
+        return result
